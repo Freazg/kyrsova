@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="АРОН-БУД – професійні будівельні рішення: гідроізоляція, покрівельні роботи, промислові підлоги.">
+<meta name="keywords" content="промислові підлоги, гідроізоляція, покрівельні роботи, будівельні послуги Київ">
+    <title>Промислові підлоги | АРОН-БУД</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A2E5A;
+            --primary-light: #1A4B8C;
+            --primary-dark: #071D3A;
+            --secondary: #C4A876;
+            --secondary-light: #E8D7B5;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gray: #6C757D;
+            --light-gray: #E9ECEF;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+            overflow-x: hidden;
+            padding-top: 90px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(196, 168, 118, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            background-color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 46, 90, 0.8), rgba(10, 46, 90, 0.8)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            height: calc(100vh - 90px);
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Industrial Floors Section */
+        .industrial-floors {
+            background-color: white;
+        }
+
+        .industrial-floors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .industrial-floors-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .industrial-floors-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .industrial-floors-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .industrial-floors-card p {
+            color: var(--gray);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background-color: var(--light-gray);
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .benefit-icon {
+            margin-right: 15px;
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-about {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            background-color: var(--secondary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .footer-logo-text h3 {
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .footer-about p {
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h3,
+        .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h3::after,
+        .footer-contact h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--secondary);
+            margin-top: 3px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .industrial-floors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                position: fixed;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                transform: translateY(-150%);
+                transition: var(--transition);
+            }
+
+            nav.active {
+                transform: translateY(0);
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0 0 15px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: auto;
+                padding: 100px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="main.html" class="logo">
+                <div class="logo-img"><img src="https://i.ibb.co/sp9Rkk8K/Chat-GPT-Image-10-2025-01-52-22.png" alt="АРОН-БУД Лого" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                <div class="logo-text">
+                    <h1>АРОН-БУД</h1>
+                    <p>Будівельні технології</p>
+                </div>
+            </a>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="main.html#home" class="btn btn-outline">Повернутися на головну</a></li>
+                    <li><a href="#solutions">Наші рішення</a></li>
+                    <li><a href="#benefits">Переваги</a></li>
+                    <li><a href="main.html#contact">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Промислові підлоги від АРОН-БУД</h1>
+                <p>Міцні та довговічні підлогові покриття для складів, заводів, паркінгів та інших промислових об’єктів.</p>
+                <a href="main.html#contact" class="btn btn-primary">Замовити консультацію</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Floors Details Section -->
+    <section class="industrial-floors" id="solutions">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Наші рішення з промислових підлог</h2>
+                <p>Надійні покриття для будь-яких промислових потреб</p>
+            </div>
+
+            <div class="industrial-floors-grid">
+                <div class="industrial-floors-card">
+                    <h3>Бетонні підлоги</h3>
+                    <p>Влаштування армованих бетонних підлог із захисним топінгом для високих навантажень на складах та заводах.</p>
+                </div>
+                <div class="industrial-floors-card">
+                    <h3>Полімерні покриття</h3>
+                    <p>Наливні епоксидні та поліуретанові підлоги для хімічної стійкості та естетичного вигляду.</p>
+                </div>
+                <div class="industrial-floors-card">
+                    <h3>Антистатичні підлоги</h3>
+                    <p>Спеціалізовані покриття для приміщень з електронікою, що запобігають накопиченню статичної електрики.</p>
+                </div>
+                <div class="industrial-floors-card">
+                    <h3>Ремонт підлог</h3>
+                    <p>Відновлення та зміцнення існуючих промислових підлог із застосуванням сучасних матеріалів.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Переваги наших промислових підлог</h2>
+                <p>Чому клієнти обирають АРОН-БУД</p>
+            </div>
+            <ul class="benefits-list">
+                <li class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <p>Матеріали від світових лідерів (Sika, BASF, Mapei)</p>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <p>Гарантія на покриття до 10 років</p>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <p>Фахівці з досвідом у промисловому будівництві</p>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <p>Індивідуальний підбір типу покриття</p>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check"></i></div>
+                    <p>Висока швидкість виконання робіт</p>
+                </li>
+            </ul>
+            <div class="text-center">
+                <a href="main.html#contact" class="btn btn-primary">Зв’язатися з нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-img"><img src="https://i.ibb.co/sp9Rkk8K/Chat-GPT-Image-10-2025-01-52-22.png" alt="АРОН-БУД Лого" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <div class="footer-logo-text">
+                            <h3>АРОН-БУД</h3>
+                            <p>Будівельні технології</p>
+                        </div>
+                    </div>
+                    <p>ТОВ «АРОН-БУД» - надійний партнер на будівельному ринку України з понад 10-річним досвідом.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="main.html#home">Головна</a></li>
+                        <li><a href="main.html#services">Послуги</a></li>
+                        <li><a href="main.html#tech">Технології</a></li>
+                        <li><a href="main.html#projects">Проекти</a></li>
+                        <li><a href="main.html#contact">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Послуги</h3>
+                    <ul>
+                        <li><a href="waterproofing.html">Гідроізоляція</a></li>
+                        <li><a href="roofing.html">Покрівельні роботи</a></li>
+                        <li><a href="#">Промислові підлоги</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> м. Київ, вул. Будівельна, 123</p>
+                    <p><i class="fas fa-phone"></i> +38 (012) 345-67-89</p>
+                    <p><i class="fas fa-envelope"></i> info@aronbud.com.ua</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© <span id="current-year"></span> ТОВ "АРОН-БУД". Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            this.innerHTML = mainNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.industrial-floors-card, .section-title, .benefits-list');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.industrial-floors-card, .section-title, .benefits-list').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'all 0.6s ease-out';
+        });
+
+        // Initialize everything when page loads
+        window.addEventListener('load', () => {
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Initialize animations
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+</body>
+</html>
