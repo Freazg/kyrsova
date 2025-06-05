@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="АРОН-БУД – професійні будівельні рішення: гідроізоляція, покрівельні роботи, промислові підлоги.">
+<meta name="keywords" content="промислові підлоги, гідроізоляція, покрівельні роботи, будівельні послуги Київ">
+    <title>АРОН-БУД | Інноваційні будівельні рішення</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+    :root {
+    --primary: #0A2E5A;
+    --primary-light: #1A4B8C;
+    --primary-dark: #071D3A;
+    --secondary: #C4A876;
+    --secondary-light: #E8D7B5;
+    --light: #F8F9FA;
+    --dark: #212529;
+    --gray: #6C757D;
+    --light-gray: #E9ECEF;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: var(--light);
+    overflow-x: hidden;
+    padding-top: 90px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: white;
+    border: 2px solid var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary);
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.logo-text p {
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: var(--transition);
+    padding: 5px 0;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: var(--transition);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(10, 46, 90, 0.8), rgba(10, 46, 90, 0.8)), 
+                url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+    height: calc(100vh - 90px);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Services Section */
+.services {
+    background-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.service-card:hover .service-img img {
+    transform: scale(1.05);
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.service-content p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: var(--light-gray);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.features {
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.feature-icon {
+    margin-right: 15px;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+/* Technology Section with 3D Model */
+.tech-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    position: relative;
+}
+
+.tech-container {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 50px;
+}
+
+.tech-3d-container {
+    flex: 1;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#tech-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.model-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.model-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: blur(5px);
+}
+
+.model-btn:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.model-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.tech-3d-container:hover .model-info {
+    display: block;
+}
+
+/* Projects Section */
+.projects {
+    background-color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(10, 46, 90, 0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: white;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Partners Section */
+.partners {
+    background-color: var(--light-gray);
+    padding: 60px 0;
+}
+
+.partners-slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.partner-logo {
+    height: 60px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--primary);
+    color: white;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-info p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 15px;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.footer-logo-text h3 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer-about p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
+    transform: translateY(-3px);
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-links h3::after,
+.footer-contact h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+    padding-left: 5px;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: var(--secondary);
+    margin-top: 3px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .tech-3d-container {
+        height: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-container,
+    .contact-container,
+    .tech-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img,
+    .tech-content {
+        order: -1;
+    }
+
+    .tech-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .tech-3d-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transform: translateY(-150%);
+        transition: var(--transition);
+    }
+
+    nav.active {
+        transform: translateY(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0 0 15px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-3d-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .project-card {
+        height: 250px;
+    }
+    
+    .tech-3d-container {
+        height: 300px;
+    }
+    
+    .model-controls {
+        bottom: 10px;
+    }
+    
+    .model-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Loading animation */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--secondary);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading-text {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-img"> <img src="https://i.ibb.co/sp9Rkk8K/Chat-GPT-Image-10-2025-01-52-22.png" alt="АРОН-БУД Лого" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                <div class="logo-text">
+                    <h1>АРОН-БУД</h1>
+                    <p>Будівельні технології</p>
+                </div>
+            </a>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#tech">Технології</a></li>
+                    <li><a href="#projects">Проекти</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Інноваційні будівельні рішення</h1>
+                <p>ТОВ «АРОН-БУД» - надійний партнер на будівельному ринку України з понад 10-річним досвідом у сфері гідроізоляції та промислових підлог.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Наші послуги</a>
+                    <a href="#contact" class="btn btn-outline" style="color: white; border-color: white;">Зв'язатися з нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наші послуги</h2>
+                <p>Комплексні рішення для промислових та цивільних об'єктів</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Гідроізоляція">
+                    </div>
+                    <div class="service-content">
+                        <h3>Гідроізоляція</h3>
+                        <p>Фундаментів, тунелів, резервуарів, паркінгів, підпірних стін та підземних споруд з використанням матеріалів преміум-класу.</p>
+                        <a href="waterproofing.html" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Покрівельні роботи">
+                    </div>
+                    <div class="service-content">
+                        <h3>Покрівельні роботи</h3>
+                        <p>Влаштування та ремонт плоских покрівель, терас з гарантією якості та використанням сучасних матеріалів.</p>
+                        <a href="roofing.html" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Промислові підлоги">
+                    </div>
+                    <div class="service-content">
+                        <h3>Промислові підлоги</h3>
+                        <p>Високоміцні покриття для складів, виробництва: бетонні підлоги з топінгом, полімерні, поліуретанові, епоксидні підлоги.</p>
+                        <a href="industrial-floors.html" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Про компанію</h2>
+                    <p>ТОВ «АРОН-БУД» - динамічно розвивається, спеціалізується на виконанні повного спектру будівельно-монтажних робіт по влаштуванню і ремонту гідроізоляції, покрівель, улаштування промислових підлог.</p>
+                    <p>У своїй роботі Компанія використовує останні технологічні розробки в області будівництва і сучасне обладнання. Роботи виконуються спеціалізованими бригадами професіоналів зі стажем роботи 10 років і більше.</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>10+ років досвіду на будівельному ринку</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>Кваліфіковані фахівці з великим досвідом</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>Використання матеріалів від провідних світових виробників</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Про компанію">
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Technology Section with 3D Model -->
+<section class="tech-section" id="tech">
+    <div class="container tech-container">
+        <div class="tech-content">
+            <h2>Наші технології</h2>
+            <p>Компанія "Арон-Буд" використовує сучасні технології та матеріали провідних європейських виробників для створення довговічних та якісних рішень.</p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Полімерні покриття для промислових підлог (епоксидні, поліуретанові)</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Сучасні системи гідроізоляції (ПВХ-мембрани, полімерні матеріали)</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Високоміцні бетонні підлоги з топінгом та втопленим покриттям</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <p>Інноваційні покрівельні системи з гарантією до 20 років</p>
+                </div>
+            </div>
+            
+            <p>Ось приклад нашого останнього проекту - сучасного міського простору у 3D-форматі. Ви можете обертати модель мишею.</p>
+            <a href="#contact" class="btn btn-primary">Замовити консультацію</a>
+        </div>
+        
+        <div class="tech-3d-container">
+            <iframe 
+                id="sketchfab-embed"
+                src="https://sketchfab.com/models/6f9d610206c245478b07f32b4451cf09/embed?autostart=0&ui_controls=0&ui_infos=0&ui_stop=0&ui_watermark=0&ui_watermark_link=0&ui_settings=0&ui_help=0&ui_hint=0&ui_general_controls=0&transparent=1"
+                style="width: 100%; height: 100%; border: none; background: transparent;"
+                allow="autoplay; fullscreen; vr"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наші проекти</h2>
+                <p>Реалізовані об'єкти по всій Україні</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Проект 1" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Гідроізоляція паркінгу</h3>
+                        <p>ЖК "Престиж Холл", Київ</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Проект 2" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Промислові підлоги</h3>
+                        <p>Завод "Енергомаш", Харків</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Проект 3" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Ремонт покрівлі</h3>
+                        <p>ТРЦ "Скай Молл", Львів</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наші партнери</h2>
+                <p>Працюємо з провідними виробниками будівельних матеріалів</p>
+            </div>
+
+            <div class="partners-slider">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6JsrNr5Hf46s4rFsj1Aps2Tk7ssp7_hY9Yw&s" alt="WEBER" class="partner-logo">
+                <img src="https://lh4.googleusercontent.com/proxy/H5xiEBAO7tql0s337o9fzRUv2BbsDniOaZowiSedU3edFt3PL76Xb1VyD6UDhLG1hevK2HA301auxw_b6Gvbkk4aWCFoPo1jdkx7Q-zkffHIyhWCcXTM" alt="Deiterman" class="partner-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGot0zv0kmsedanh_2pg15NNvvyScaXRt7g&s" alt="Sika" class="partner-logo">
+                <img src="https://ligamaistriv.com.ua/wp-content/uploads/2023/05/mapei-color_1636943135-_1_.webp" alt="Mapei" class="partner-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5tRedRPYuV1a52nfV9OydMzxv2M1FazfoQ&s" alt="BASF" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Зв'яжіться з нами</h2>
+                    <p>Залиште свої контактні дані, і наш менеджер зв'яжеться з вами найближчим часом для консультації.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p>м. Київ, вул. Будівельна, 123</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p>+38 (012) 345-67-89</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>info@aronbud.com.ua</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <input type="tel" placeholder="Ваш телефон">
+                    <textarea placeholder="Ваше повідомлення" required></textarea>
+                    <button type="submit" class="btn btn-primary">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-img"><img src="https://i.ibb.co/sp9Rkk8K/Chat-GPT-Image-10-2025-01-52-22.png" alt="АРОН-БУД Лого" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <div class="footer-logo-text">
+                            <h3>АРОН-БУД</h3>
+                            <p>Будівельні технології</p>
+                        </div>
+                    </div>
+                    <p>ТОВ «АРОН-БУД» - надійний партнер на будівельному ринку України з понад 10-річним досвідом.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#services">Послуги</a></li>
+                        <li><a href="#tech">Технології</a></li>
+                        <li><a href="#projects">Проекти</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Послуги</h3>
+                    <ul>
+                        <li><a href="waterproofing.html">Гідроізоляція</a></li>
+                        <li><a href="roofing.html">Покрівельні роботи</a></li>
+                        <li><a href="industrial-floors.html">Промислові підлоги</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> м. Київ, вул. Будівельна, 123</p>
+                    <p><i class="fas fa-phone"></i> +38 (012) 345-67-89</p>
+                    <p><i class="fas fa-envelope"></i> info@aronbud.com.ua</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> ТОВ "АРОН-БУД". Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/RGBELoader.min.js"></script>
+    
+    <!-- Main JavaScript file -->
+    <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+
+    mobileMenuBtn.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+        this.innerHTML = mainNav.classList.contains('active') ? 
+            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('active');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 90,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        }
+    });
+
+    // Animation on scroll
+    function animateOnScroll() {
+        const elements = document.querySelectorAll('.service-card, .project-card, .section-title, .about-img, .about-content, .contact-form, .contact-info');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }
+
+    // Set initial state for animated elements
+    document.querySelectorAll('.service-card, .project-card, .section-title, .about-img, .about-content, .contact-form, .contact-info').forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = 'all 0.6s ease-out';
+    });
+
+
+    // Initialize everything when page loads
+    window.addEventListener('load', () => {
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Initialize animations
+        animateOnScroll();
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Initialize 3D scene
+        init3DScene();
+        
+        // Form submission
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Дякуємо за ваше повідомлення! Ми зв\'яжемося з вами найближчим часом.');
+                this.reset();
+            });
+        }
+    });
+    </script>
+</body>
+</html>
